@@ -7,7 +7,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="favicon.svg"/>
     <link rel="preconnect" href="https://fonts.googleapis.com"/>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin"/>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800;900&amp;family=Open+Sans:wght@400;600&amp;display=swap"/>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800;900&amp;family=Open+Sans:wght@400;600&amp;display=swap" rel="preload" as="font" onload="this.onload=null;this.rel='stylesheet'"/>
     <link rel="stylesheet" href="css/main.css"/>
     <title>Com.Unity</title>
   </head>
@@ -55,14 +55,17 @@
       <section class="hero js-anim" id="hero">
         <div class="container">
           <div class="hero-holder">
-            <div class="hero-content"><img class="hero__logo" src="img/svg/big-logo.svg" alt="logo"/>
+            <div class="hero-content">
+              <div class="hero__logo"><img src="img/svg/big-logo.svg" alt="logo" width="267px" height="137px"/></div>
               <div class="hero__title title">Короткий путь к профиту</div>
               <p>Наша команда объединяет овнеров крупных арбитражных команд и рекламодателей. За пять лет работы каждый из нас узнал и научился многим фишкам, о которых не расскажут на курсах.</p>
               <div class="hero-buttons"><a class="button js-anchor" href="#tariffs">Присоединиться</a><a class="link-button js-anchor" href="#advantages"><span class="link-button__icon"><i class="fico fico-play"></i></span>Посмотреть видео</a></div>
-              <picture class="hero__img">
-                <source type="image/webp" srcset="img/hero-img-01.webp"/>
-                <source type="image/png" srcset="img/hero-img-01.png"/><img src="img/hero-img-01.png" alt=""/>
-              </picture>
+              <div class="hero__img">
+                <picture>
+                  <source type="image/webp" srcset="img/hero-img-01.webp"/>
+                  <source type="image/png" srcset="img/hero-img-01.png"/><img src="img/hero-img-01.png" alt="" width="407px" height="226px"/>
+                </picture>
+              </div>
             </div>
             <div class="hero-block">
               <p>Мы знаем о проблемах арбитражников все, поэтому поможем тебе избежать ошибок и дадим хороший буст для старта.</p>
@@ -73,11 +76,13 @@
       <div class="marquee">
         <div class="marquee-block marquee3k" data-speed="1"><span class="marquee__el"><span>Com.Unity</span><span>Com.Unity</span><span>Com.Unity</span><span>Com.Unity</span><span>Com.Unity</span><span>Com.Unity</span><span>Com.Unity</span></span></div>
       </div>
-      <section class="about js-anim" id="about"><img class="about__img" src="img/about-img-01.webp" alt=""/>
-        <picture class="about__img">
-          <source type="image/webp" srcset="img/about-img-01.webp"/>
-          <source type="image/png" srcset="img/about-img-01.png"/><img src="img/about-img-01.png" alt=""/>
-        </picture>
+      <section class="about js-anim" id="about">
+        <div class="about__img">
+          <picture>
+            <source type="image/webp" srcset="img/about-img-01.webp"/>
+            <source type="image/png" srcset="img/about-img-01.png"/><img src="img/about-img-01.png" alt="" width="390px" height="339px"/>
+          </picture>
+        </div>
         <div class="container">
           <div class="about-holder">
             <div class="about-block">
@@ -102,10 +107,12 @@
         </div>
       </section>
       <section class="practice" id="practice">
-        <picture class="practice__img">
-          <source type="image/webp" srcset="img/practice-img-01.webp"/>
-          <source type="image/png" srcset="img/practice-img-01.png"/><img src="img/practice-img-01.png" alt=""/>
-        </picture>
+        <div class="practice__img">
+          <picture>
+            <source type="image/webp" srcset="img/practice-img-01.webp"/>
+            <source type="image/png" srcset="img/practice-img-01.png"/><img src="img/practice-img-01.png" alt=""/>
+          </picture>
+        </div>
         <div class="container">
           <div class="practice-holder js-anim">
             <div class="title">Что ты получишь?</div>
@@ -139,7 +146,7 @@
             <div class="marquee-block marquee3k" data-speed="0.5" data-reverse="true">
               <picture>
                 <source type="image/webp" srcset="img/investment-img-01.webp"/>
-                <source type="image/jpeg" srcset="img/investment-img-01.jpg"/><img src="img/investment-img-01.jpg" alt=""/>
+                <source type="image/jpeg" srcset="img/investment-img-01.jpg"/><img src="img/investment-img-01.jpg" alt="" width="932px" height="120px"/>
               </picture>
             </div>
           </div>
@@ -147,7 +154,7 @@
             <div class="marquee-block marquee3k" data-speed="0.5" data-reverse="true">
               <picture>
                 <source type="image/webp" srcset="img/investment-img-02.webp"/>
-                <source type="image/jpeg" srcset="img/investment-img-02.jpg"/><img src="img/investment-img-02.jpg" alt=""/>
+                <source type="image/jpeg" srcset="img/investment-img-02.jpg"/><img src="img/investment-img-02.jpg" alt="" width="1087px" height="120px"/>
               </picture>
             </div>
           </div>
@@ -168,7 +175,7 @@
               <div class="personal-el-img">
                 <picture>
                   <source type="image/webp" srcset="img/personal-img-01.webp"/>
-                  <source type="image/png" srcset="img/personal-img-01.png"/><img src="img/personal-img-01.png" alt=""/>
+                  <source type="image/png" srcset="img/personal-img-01.png"/><img src="img/personal-img-01.png" alt="" width="300px" height="300px"/>
                 </picture>
               </div>
             </div>
@@ -183,7 +190,7 @@
               <div class="personal-el-img">
                 <picture>
                   <source type="image/webp" srcset="img/personal-img-02.webp"/>
-                  <source type="image/png" srcset="img/personal-img-02.png"/><img src="img/personal-img-02.png" alt=""/>
+                  <source type="image/png" srcset="img/personal-img-02.png"/><img src="img/personal-img-02.png" alt="" width="300px" height="300px"/>
                 </picture>
               </div>
             </div>
@@ -198,7 +205,7 @@
               <div class="personal-el-img">
                 <picture>
                   <source type="image/webp" srcset="img/personal-img-01.webp"/>
-                  <source type="image/png" srcset="img/personal-img-01.png"/><img src="img/personal-img-01.png" alt=""/>
+                  <source type="image/png" srcset="img/personal-img-01.png"/><img src="img/personal-img-01.png" alt="" width="300px" height="300px"/>
                 </picture>
               </div>
             </div>
@@ -213,7 +220,7 @@
               <div class="personal-el-img">
                 <picture>
                   <source type="image/webp" srcset="img/personal-img-02.webp"/>
-                  <source type="image/png" srcset="img/personal-img-02.png"/><img src="img/personal-img-02.png" alt=""/>
+                  <source type="image/png" srcset="img/personal-img-02.png"/><img src="img/personal-img-02.png" alt="" width="300px" height="300px"/>
                 </picture>
               </div>
             </div>
@@ -221,10 +228,12 @@
         </div>
       </section>
       <section class="start js-anim" id="start">
-        <picture class="start__img">
-          <source type="image/webp" srcset="img/start-img-01.webp"/>
-          <source type="image/png" srcset="img/start-img-01.png"/><img src="img/start-img-01.png" alt=""/>
-        </picture>
+        <div class="start__img">
+          <picture>
+            <source type="image/webp" srcset="img/start-img-01.webp"/>
+            <source type="image/png" srcset="img/start-img-01.png"/><img src="img/start-img-01.png" alt="" width="260px" height="249px"/>
+          </picture>
+        </div>
         <div class="container">
           <div class="start-holder js-anim">
             <div class="start-block">
@@ -254,13 +263,13 @@
             <div class="poster poster-left">
               <picture>
                 <source type="image/webp" srcset="img/poster-01.webp"/>
-                <source type="image/jpg" srcset="img/poster-01.jpg"/><img src="img/poster-01.jpg" alt=""/>
+                <source type="image/jpeg" srcset="img/poster-01.jpg"/><img src="img/poster-01.jpg" alt="" width="90px" height="113px"/>
               </picture>
             </div>
             <div class="poster poster-right">
               <picture>
                 <source type="image/webp" srcset="img/poster-02.webp"/>
-                <source type="image/jpg" srcset="img/poster-02.jpg"/><img src="img/poster-02.jpg" alt=""/>
+                <source type="image/jpeg" srcset="img/poster-02.jpg"/><img src="img/poster-02.jpg" alt="" width="90px" height="113px"/>
               </picture>
             </div>
           </div>
@@ -384,7 +393,7 @@
     <footer class="footer">
       <div class="container">
         <div class="footer-holder">
-          <div class="footer__logo"><a href="#"><img src="img/svg/logo.svg" alt="logo"/></a></div>
+          <div class="footer__logo"><a href="#"><img src="img/svg/logo.svg" alt="logo" width="320px" height="70px"/></a></div>
           <div class="footer-content"><a class="footer__link" href="https://t.me/comunity_tg" target="_blank"><i class="fico fico-tg"></i>t.me/comunity_tg</a><a class="footer__link footer__link_policy" href="/privacy.html" target="_blank">Privacy policy</a>
             <div class="copiright">© com.unity 2022</div>
           </div>
@@ -402,11 +411,11 @@
     </div>
     <div class="popup popup-pictures" id="dictionary">
       <button class="popup-close js-close-popoup"></button>
-      <div class="popup__img"><img src="img/dictionary-img-01.jpg" alt=""/></div>
+      <div class="popup__img" data-img1="img/dictionary-img-01.jpg" data-img2="img/dictionary-img-01.jpg"></div>
     </div>
     <div class="popup popup-pictures" id="instruction">
       <button class="popup-close js-close-popoup"></button>
-      <div class="popup__img"><img src="img/instruction-img-01.jpg" alt=""/></div>
+      <div class="popup__img" data-img1="img/instruction-img-01.jpg" data-img2="img/instruction-img-02.jpg"></div>
     </div>
     <div class="overlay"></div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
