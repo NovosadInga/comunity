@@ -1,8 +1,8 @@
 <?php
 
 if (isset($_POST)) {
-  $to = 'contact@qwe.shop';
-  $subject = 'From contact@qwe.shop';
+  $to = 'contact@combox.shop';
+  $subject = 'From contact@combox.shop';
   $subject = '=?UTF-8?B?' . base64_encode($subject) . '?=' . PHP_EOL;
   $message = '<table cellpadding=\'0\' cellspacing=\'0\' border=\'0\'>';
   
@@ -20,7 +20,7 @@ if (isset($_POST)) {
     $message .= '<tr><td align=\'right\'>'.$key.':</td><td>&nbsp;<b>'.Trim(stripslashes($value)).'</b></td></tr>';
   }
   $message .= '</table>';
-  $headers = 'From: contact@qwe.shop' . PHP_EOL . 'Reply-To: contact@qwe.shop' . PHP_EOL . 'Content-Type: text/html; charset=UTF-8' . PHP_EOL . 'MIME-Version: 1.0' . PHP_EOL . 'Content-Transfer-Encoding: 8bit ' . PHP_EOL;
+  $headers = 'From: contact@combox.shop' . PHP_EOL . 'Reply-To: contact@combox.shop' . PHP_EOL . 'Content-Type: text/html; charset=UTF-8' . PHP_EOL . 'MIME-Version: 1.0' . PHP_EOL . 'Content-Transfer-Encoding: 8bit ' . PHP_EOL;
 
   $mail = mail($to, $subject, $message, $headers);
 
@@ -34,7 +34,7 @@ if (isset($_POST)) {
 function check($token)
 {
     $params = [
-        'secret' => 'captcha_key',
+        'secret' => '6Le9dY0fAAAAACd6EP3s1DJ0z_OFnHY7g-Cq0gqP',
         'response' => $token,
         'remoteip' => $_SERVER['REMOTE_ADDR']
     ];
