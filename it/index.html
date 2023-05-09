@@ -251,7 +251,11 @@
         <div class="container">
           <div class="advantages__title title">Ricevuto accesso a tutti i vantaggi</div>
           <div class="advantages-video video">
-            <div class="player-button" id="playButton">
+            <div class="player-wrap" id="playVideo">
+              <picture>
+                <source type="image/webp" srcset="img/video-poster.webp"/>
+                <source type="image/jpeg" srcset="img/video-poster.jpg"/><img src="img/video-poster.jpg" alt="" width="925px" height="524px"/>
+              </picture>
               <button class="link-button_big" aria-label="Play video"><span class="link-button__icon"><i class="fico fico-play"></i></span></button>
             </div>
             <iframe id="ytplayer" data-src="https://www.youtube.com/embed/wl49riTQK9o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
