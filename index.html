@@ -19,7 +19,7 @@
             <div class="top-menu">
               <div class="top-menu__logo"><a class="js-anchor" href="#hero"><img src="img/svg/logo.svg" alt="logo"/></a></div>
               <div class="top-menu-buttons"><a class="button js-anchor" href="#tariffs">Присоединиться</a>
-                <button class="burger"></button>
+                <button class="burger" aria-label="Open menu"></button>
               </div>
             </div>
           </div>
@@ -40,9 +40,12 @@
                 </ul><a class="button js-anchor" href="#tariffs">Присоединиться</a>
                 <div class="langs"><i class="langs__icon fico fico-langs-icon"></i>
                   <ul class="langs-list">
-                    <li></li><span class="lang">RU</span>
-                    <li></li><a class="lang" href="/ua/index.html">UA</a>
-                    <li></li><a class="lang" href="/it/index.html">IT</a>
+                    <li><span class="lang">RU</span>
+                    </li>
+                    <li><a class="lang" href="/ua/index.html">UA</a>
+                    </li>
+                    <li><a class="lang" href="/it/index.html">IT</a>
+                    </li>
                   </ul>
                 </div>
               </div>
@@ -249,7 +252,7 @@
           <div class="advantages__title title">Получи доступ ко всем преимуществам</div>
           <div class="advantages-video video">
             <div class="player-button" id="playButton">
-              <button class="link-button_big"><span class="link-button__icon"><i class="fico fico-play"></i></span></button>
+              <button class="link-button_big" aria-label="Play video"><span class="link-button__icon"><i class="fico fico-play"></i></span></button>
             </div>
             <iframe id="ytplayer" data-src="https://www.youtube.com/embed/wl49riTQK9o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
           </div>
@@ -407,21 +410,21 @@
       </div>
     </footer>
     <div class="popup popup-success" id="success">
-      <button class="popup-close popup-close_small js-close-popoup"></button>
+      <button class="popup-close popup-close_small js-close-popoup" aria-label="Close"></button>
       <div class="popup-success-holder">
         <p>Отлично! <br/> Скоро с тобой свяжется менеджер, а пока вступай в телеграм-канал Com.Unity.</p>
         <div class="popup-success__button js-close-popoup">
-          <button class="button">ОК</button>
+          <button class="button" aria-label="Close">ОК</button>
         </div>
       </div>
     </div>
     <div class="popup popup-pictures" id="dictionary">
-      <button class="popup-close js-close-popoup"></button>
-      <div class="popup__img" data-img1="img/dictionary-img-01.jpg" data-img2="img/dictionary-img-02.jpg"></div>
+      <button class="popup-close js-close-popoup" aria-label="Close"></button>
+      <div class="popup__img"><img data-src="img/dictionary-img-01.jpg" alt=""/><img data-src="img/dictionary-img-02.jpg" alt=""/></div>
     </div>
     <div class="popup popup-pictures" id="instruction">
-      <button class="popup-close js-close-popoup"></button>
-      <div class="popup__img" data-img1="img/instruction-img-01.jpg" data-img2="img/instruction-img-02.jpg"></div>
+      <button class="popup-close js-close-popoup" aria-label="Close"></button>
+      <div class="popup__img"><img data-src="img/instruction-img-01.jpg" alt=""/><img data-src="img/instruction-img-02.jpg" alt=""/></div>
     </div>
     <div class="overlay"></div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
