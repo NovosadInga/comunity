@@ -219,8 +219,8 @@
               </div>
               <div class="personal-el-img">
                 <picture>
-                  <source type="image/webp" srcset="img/personal-img-02.webp"/>
-                  <source type="image/png" srcset="img/personal-img-02.png"/><img src="img/personal-img-02.png" alt="" width="300px" height="300px"/>
+                  <source type="image/webp" srcset="img/personal-img-04.webp"/>
+                  <source type="image/png" srcset="img/personal-img-04.png"/><img src="img/personal-img-04.png" alt="" width="300px" height="300px"/>
                 </picture>
               </div>
             </div>
@@ -248,9 +248,10 @@
         <div class="container">
           <div class="advantages__title title">Получи доступ ко всем преимуществам</div>
           <div class="advantages-video video">
-            <div class="player-button" id="playButton" data-video="https://www.youtube.com/embed/wl49riTQK9o">
+            <div class="player-button" id="playButton">
               <button class="link-button_big"><span class="link-button__icon"><i class="fico fico-play"></i></span></button>
             </div>
+            <iframe id="ytplayer" data-src="https://www.youtube.com/embed/wl49riTQK9o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
           </div>
           <div class="advantages-bottom"><a class="button button_bordered js-open-popup" href="#dictionary">Словарь</a><a class="button button_bordered js-open-popup" href="#instruction">Инструкция</a>
             <svg class="arrow arrow-left" viewBox="0 0 211 82" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -281,79 +282,85 @@
         <div class="container">
           <div class="tariffs-block">
             <div class="tariffs-list">
-              <div class="tariff" data-value="value_1">
-                <div class="price">
-                  <div class="price-icon"><i class="fico fico-tariff-1"></i></div>
-                  <div class="price-holder">
-                    <div class="price__nums">25000</div>
-                    <div class="price__currency">UAH</div>
+              <div class="slide">
+                <div class="tariff" data-value="499$">
+                  <div class="price">
+                    <div class="price-icon"><i class="fico fico-tariff-1"></i></div>
+                    <div class="price-holder">
+                      <div class="price__nums">499</div>
+                      <div class="price__currency">$</div>
+                    </div>
                   </div>
+                  <ul class="tariff-list">
+                    <li><i class="fico fico-check"></i>Аккаунты — 60 шт.</li>
+                    <li><i class="fico fico-check"></i>Креативы — 30 шт.</li>
+                    <li><i class="fico fico-check"></i>Вайтпейджи — 5 шт.</li>
+                    <li><i class="fico fico-check"></i>Домены — 30 шт.</li>
+                    <li><i class="fico fico-check"></i>Трекер </li>
+                    <li><i class="fico fico-check"></i>Антидетект-браузер </li>
+                    <li><i class="fico fico-check"></i>Настройка клоаки </li>
+                    <li><i class="fico fico-check"></i>Привязка доменов на CloudFlare </li>
+                    <li><i class="fico fico-check"></i>Настройка трекера</li>
+                    <li><i class="fico fico-check"></i>Создание сетапов</li>
+                    <li><i class="fico fico-check"></i>Перенос аккаунтов в антидетект-браузер</li>
+                    <li><i class="fico fico-check"></i>Консалтинг и поддержка мидл-арбитражника на 1 месяц</li>
+                  </ul>
                 </div>
-                <ul class="tariff-list">
-                  <li><i class="fico fico-check"></i>Аккаунты — 60 шт.</li>
-                  <li><i class="fico fico-check"></i>Креативы — 30 шт.</li>
-                  <li><i class="fico fico-check"></i>Вайтпейджи — 5 шт.</li>
-                  <li><i class="fico fico-check"></i>Домены — 30 шт.</li>
-                  <li><i class="fico fico-check"></i>Трекер </li>
-                  <li><i class="fico fico-check"></i>Антидетект-браузер </li>
-                  <li><i class="fico fico-check"></i>Настройка клоаки </li>
-                  <li><i class="fico fico-check"></i>Привязка доменов на CloudFlare </li>
-                  <li><i class="fico fico-check"></i>Настройка трекера</li>
-                  <li><i class="fico fico-check"></i>Создание сетапов</li>
-                  <li><i class="fico fico-check"></i>Перенос аккаунтов в антидетект-браузер</li>
-                  <li><i class="fico fico-check"></i>Консалтинг и поддержка мидл-арбитражника на 1 месяц</li>
-                </ul>
               </div>
-              <div class="tariff active" data-value="value_2">
-                <div class="price">
-                  <div class="price-icon"><i class="fico fico-personal-2"></i></div>
-                  <div class="price-holder">
-                    <div class="price__nums">10000</div>
-                    <div class="price__currency">UAH</div>
+              <div class="slide">
+                <div class="tariff active" data-value="999$">
+                  <div class="price">
+                    <div class="price-icon"><i class="fico fico-personal-2"></i></div>
+                    <div class="price-holder">
+                      <div class="price__nums">999</div>
+                      <div class="price__currency">$</div>
+                    </div>
                   </div>
+                  <ul class="tariff-list">
+                    <li><i class="fico fico-check"></i>Аккаунты — 150 шт.</li>
+                    <li><i class="fico fico-check"></i>Креативы — 60 шт.</li>
+                    <li><i class="fico fico-check"></i>Вайтпейджи — 10 шт.</li>
+                    <li><i class="fico fico-check"></i>Домены — 60 шт.</li>
+                    <li><i class="fico fico-check"></i>Трекер</li>
+                    <li><i class="fico fico-check"></i>Антидетект-браузер</li>
+                    <li><i class="fico fico-check"></i>Настройка клоаки</li>
+                    <li><i class="fico fico-check"></i>Привязка доменов на CloudFlare </li>
+                    <li><i class="fico fico-check"></i>Настройка трекера </li>
+                    <li><i class="fico fico-check"></i>Создание сетапов с аккаунтов </li>
+                    <li><i class="fico fico-check"></i>Перенос аккаунтов в антидетект-браузер</li>
+                    <li><i class="fico fico-check"></i>Консалтинг с топ-арбитражником на тему «Креативы»</li>
+                    <li><i class="fico fico-check"></i>Консалтинг с топ-арбитражником на тему «Выбор оффера»</li>
+                    <li><i class="fico fico-check"></i>Консалтинг и поддержка мидл-арбитражника на 1 месяц</li>
+                  </ul>
                 </div>
-                <ul class="tariff-list">
-                  <li><i class="fico fico-check"></i>Аккаунты — 150 шт.</li>
-                  <li><i class="fico fico-check"></i>Креативы — 60 шт.</li>
-                  <li><i class="fico fico-check"></i>Вайтпейджи — 10 шт.</li>
-                  <li><i class="fico fico-check"></i>Домены — 60 шт.</li>
-                  <li><i class="fico fico-check"></i>Трекер</li>
-                  <li><i class="fico fico-check"></i>Антидетект-браузер</li>
-                  <li><i class="fico fico-check"></i>Настройка клоаки</li>
-                  <li><i class="fico fico-check"></i>Привязка доменов на CloudFlare </li>
-                  <li><i class="fico fico-check"></i>Настройка трекера </li>
-                  <li><i class="fico fico-check"></i>Создание сетапов с аккаунтов </li>
-                  <li><i class="fico fico-check"></i>Перенос аккаунтов в антидетект-браузер</li>
-                  <li><i class="fico fico-check"></i>Консалтинг с топ-арбитражником на тему «Креативы»</li>
-                  <li><i class="fico fico-check"></i>Консалтинг с топ-арбитражником на тему «Выбор оффера»</li>
-                  <li><i class="fico fico-check"></i>Консалтинг и поддержка мидл-арбитражника на 1 месяц</li>
-                </ul>
               </div>
-              <div class="tariff" data-value="value_3">
-                <div class="price">
-                  <div class="price-icon"><i class="fico fico-tariff-3"></i></div>
-                  <div class="price-holder">
-                    <div class="price__nums">5000</div>
-                    <div class="price__currency">UAH</div>
+              <div class="slide">
+                <div class="tariff" data-value="1999$">
+                  <div class="price">
+                    <div class="price-icon"><i class="fico fico-tariff-3"></i></div>
+                    <div class="price-holder">
+                      <div class="price__nums">1999</div>
+                      <div class="price__currency">$</div>
+                    </div>
                   </div>
+                  <ul class="tariff-list">
+                    <li><i class="fico fico-check"></i>Аккаунты — 330 шт.</li>
+                    <li><i class="fico fico-check"></i>Креативы — 130 шт.</li>
+                    <li><i class="fico fico-check"></i>Вайтпейджи — 20 шт.</li>
+                    <li><i class="fico fico-check"></i>Домены — 120 шт.</li>
+                    <li><i class="fico fico-check"></i>Трекер</li>
+                    <li><i class="fico fico-check"></i>Антидетект-браузер</li>
+                    <li><i class="fico fico-check"></i>Настройка клоаки </li>
+                    <li><i class="fico fico-check"></i>Привязка доменов на CloudFlare</li>
+                    <li><i class="fico fico-check"></i>Настройка трекера </li>
+                    <li><i class="fico fico-check"></i>Создание сетапов с аккаунтов </li>
+                    <li><i class="fico fico-check"></i>Перенос аккаунтов в антидетект-браузер</li>
+                    <li><i class="fico fico-check"></i>Консалтинг с топ-арбитражником на тему «Креативы»</li>
+                    <li><i class="fico fico-check"></i>Консалтинг с топ-арбитражником на тему «Выбор оффера»</li>
+                    <li><i class="fico fico-check"></i>Рекрутинговые услуги по поиску одного веб-мастера в команду</li>
+                    <li><i class="fico fico-check"></i>Консалтинг и поддержка топ-арбитражника на 1 месяц</li>
+                  </ul>
                 </div>
-                <ul class="tariff-list">
-                  <li><i class="fico fico-check"></i>Аккаунты — 330 шт.</li>
-                  <li><i class="fico fico-check"></i>Креативы — 130 шт.</li>
-                  <li><i class="fico fico-check"></i>Вайтпейджи — 20 шт.</li>
-                  <li><i class="fico fico-check"></i>Домены — 120 шт.</li>
-                  <li><i class="fico fico-check"></i>Трекер</li>
-                  <li><i class="fico fico-check"></i>Антидетект-браузер</li>
-                  <li><i class="fico fico-check"></i>Настройка клоаки </li>
-                  <li><i class="fico fico-check"></i>Привязка доменов на CloudFlare</li>
-                  <li><i class="fico fico-check"></i>Настройка трекера </li>
-                  <li><i class="fico fico-check"></i>Создание сетапов с аккаунтов </li>
-                  <li><i class="fico fico-check"></i>Перенос аккаунтов в антидетект-браузер</li>
-                  <li><i class="fico fico-check"></i>Консалтинг с топ-арбитражником на тему «Креативы»</li>
-                  <li><i class="fico fico-check"></i>Консалтинг с топ-арбитражником на тему «Выбор оффера»</li>
-                  <li><i class="fico fico-check"></i>Рекрутинговые услуги по поиску одного веб-мастера в команду</li>
-                  <li><i class="fico fico-check"></i>Консалтинг и поддержка топ-арбитражника на 1 месяц</li>
-                </ul>
               </div>
             </div>
             <div class="tariffs-form">
@@ -410,11 +417,21 @@
     </div>
     <div class="popup popup-pictures" id="dictionary">
       <button class="popup-close js-close-popoup"></button>
-      <div class="popup__img" data-img1="img/dictionary-img-01.jpg" data-img2="img/dictionary-img-01.jpg"></div>
+      <div class="popup__img" data-img1="img/dictionary-img-01.jpg" data-img2="img/dictionary-img-01.jpg">
+        <picture>
+          <source type="image/webp" srcset="img/dictionary-img-01.webp"/>
+          <source type="image/jpeg" srcset="img/dictionary-img-01.jpg"/><img src="img/dictionary-img-01.jpg" alt="" width="320px" height="360px"/>
+        </picture><img src="img/dictionary-img-02.jpg" alt="" width="390px" height="339px"/>
+      </div>
     </div>
     <div class="popup popup-pictures" id="instruction">
       <button class="popup-close js-close-popoup"></button>
-      <div class="popup__img" data-img1="img/instruction-img-01.jpg" data-img2="img/instruction-img-02.jpg"></div>
+      <div class="popup__img" data-img1="img/instruction-img-01.jpg" data-img2="img/instruction-img-02.jpg">
+        <picture>
+          <source type="image/webp" srcset="img/instruction-img-01.webp"/>
+          <source type="image/jpeg" srcset="img/instruction-img-01.jpg"/><img src="img/instruction-img-01.jpg" alt="" width="390px" height="339px"/>
+        </picture><img src="img/instruction-img-02.jpg" alt="" width="320px" height="360px"/>
+      </div>
     </div>
     <div class="overlay"></div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
